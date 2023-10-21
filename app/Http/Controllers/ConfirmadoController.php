@@ -29,11 +29,11 @@ class ConfirmadoController extends Controller
         $estados = Estado::all();
         $totalCasos = 0;
         foreach ($estados as $estado) {
-            $casosE = $estado->confirmados->sum('CASOS');
+            $casosE = $estado->confirmados->sum('casos');
             $totalCasos += $casosE;
             echo "<B>".$estado->nombre."</B> :".$casosE."<br>";
         }
-        echo "</br><B>Casos totales confirmados:</B> ".$totalCasos;
+        echo "</br><B>CASOS TOTALES</B> ".$totalCasos;
     }
 
     //public function index(){
@@ -45,7 +45,7 @@ class ConfirmadoController extends Controller
     }
 
     public function index() {
-        echo "<B> SUMA DE CASOS CONFIRMADOS POR ESTADO </B><br><br>";
+        echo "<B>CASOS POR ESTADO</B><br><br>";
         self::getCasosDesglosados();
     }
     

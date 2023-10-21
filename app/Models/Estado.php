@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Estado extends Model
 {
     use HasFactory;
-    protected $table = 'estados';
+    protected $table = 'estados_20230922185249';
     protected $primaryKey = 'id';
     public $incrementing = false;
     public $timestamps = false;

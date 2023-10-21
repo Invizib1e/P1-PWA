@@ -33,4 +33,4 @@ Route::get('/confirmados/getConfirmados', [ConfirmadoController::class, 'getConf
 //Route::resource('/estados',EstadoController::class);
 
 //Route::get('/confirmados/getConfirmados', [ConfirmadoController::class,'getConfirmados']);
-//Route::resource('/confirmados',ConfirmadoController::class);
+Route::resource('/confirmados',ConfirmadoController::class);

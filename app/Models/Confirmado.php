@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Confirmado extends Model
 {
     use HasFactory;
-    protected $table = 'confirmados';
+    protected $table = 'confirmados_20230922185254';
     protected $primaryKey = 'id';
     public $incrementing = false;
     public $timestamps = false;
