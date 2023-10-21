@@ -33,7 +33,7 @@ class ConfirmadoController extends Controller
             $totalCasos += $casosE;
             echo "<B>".$estado->nombre."</B> :".$casosE."<br>";
         }
-        echo "</br><B>CASOS TOTALES</B> ".$totalCasos;
+        echo "</br><B>CONFIRMADOS TOTALES</B> ".$totalCasos;
     }
 
     //public function index(){
